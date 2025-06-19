@@ -43,9 +43,7 @@ namespace PCWebsocketExample.PokemonChess {
                         EIO = SocketIO.Core.EngineIO.V4,
                         Transport = TransportProtocol.Polling,
                         AutoUpgrade = false,
-                        Query = [
-                            new KeyValuePair<string, string>("beta", "true")
-                        ]
+                        Query = [new("beta", "true")]
                     }
                 );
 
